@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta author="William Owens">
+  <link rel="stylesheet" href="bmi.css">
+  <link rel="icon" type="image/x-icon" href="images/owens.ico">
+</head>
+<body>
+  <h1>Body Mass Index Calculator</h1>
+
+  <div class="slidecontainer">
+      <p>Drag the slider to display your current height.</p>
+      <input type="range" min="1.000" max="2.000" step=".001" value="1.50" class="slider" id="height_slider">
+      <p>Height: <span id="height_value_cm"></span> meters or <span id="height_value_in"></span> inches</p>
+  </div>
+
+  <div class="slidecontainer">
+      <p>Drag the slider to display your current weight.</p>
+      <input type="range" min="20.00" max="200.00" step=".01" value="110.0" class="slider" id="weight_slider">
+      <p>Weight: <span id="weight_value_kg"></span> kilograms or <span id="weight_value_lb"></span> pounds</p>
+  </div>
+
+  <div class="bmiwindow">
+      <p><span id="bmi"></span></p>
+  </div>
+<script type="text/javascript" src="bmi.js">
+</script>
+</body>
+</html>
